@@ -86,7 +86,9 @@ jobs:
          run: kubectl get node -A
 
         
-       
+       - name: Delete Old Secrett
+         run: kubectl delete secret pod-secret
+
        - name: Create Secret
          run: |
             kubectl create secret generic pod-secret \
@@ -102,7 +104,10 @@ jobs:
                   
 
 
-       
+       - name: Delete Old Deployment
+         run:  |
+          kubectl delete deployment flask
+          kubectl delete svc flask-app-service 
           
        - name: Deploy to EKS
          env:
