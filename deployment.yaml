@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: flask
-          image: 578033159601.dkr.ecr.us-east-1.amazonaws.com/lks-ecr-imannuel:63f7a93d48c0c094621baea1aed1bd18886858de
+          image: 767398040510.dkr.ecr.us-east-1.amazonaws.com/techno-repository:c8ee83e9cb78cdb83b06cc83c1326070d16cace7
           ports:
-            - containerPort: 5000
+            - containerPort: 2000
           env:
             - name: AWS_ACCESS_KEY_ID
               valueFrom:
