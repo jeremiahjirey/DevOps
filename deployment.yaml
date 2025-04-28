@@ -92,5 +92,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 200
+      targetPort: 2000
   type: LoadBalancer
