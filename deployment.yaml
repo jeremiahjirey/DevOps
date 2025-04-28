@@ -75,12 +75,7 @@ spec:
                   name: pod-secret
                   key: ATHENA_SCHEMA_NAME
 
-          
-
-           
-
-           
-            
+              
 ---
 apiVersion: v1
 kind: Service
