@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: 767398040510.dkr.ecr.us-east-1.amazonaws.com/techno-repository:77f9f17bb1acf1422636fee44d400c0702b80c12
+          image: 767398040510.dkr.ecr.us-east-1.amazonaws.com/techno-repository:rekog-flask-latest
           ports:
             - containerPort: 2000
           env:
